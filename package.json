@@ -1,5 +1,5 @@
 {
-  "name": "sails-login-scaffold",
+  "name": "sails-userapp-social-login",
   "private": true,
   "version": "0.0.0",
   "description": "a Sails application",
@@ -34,8 +34,8 @@
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/icastilho/sails-login-scaffold.git"
+    "url": "git://github.com/icastilho/sails-userapp-social-login.git"
   },
   "author": "icastilho",
-  "license": ""
+  "license": "Apache License Version 2.0"
 }
