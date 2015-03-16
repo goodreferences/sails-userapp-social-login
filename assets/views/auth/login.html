@@ -1,0 +1,66 @@
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid text-center">
+    <p class="navbar-text"><strong>Sigin</strong></p>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+
+  <form class="form-signin" action="/auth/sigin" role="form" method="post">
+
+    <small class="text-muted">Connect '{{app.title}}' with your favorite social network</small>
+    <br><br>
+
+    <p>
+      <a class="btn btn-lg btn-social-icon btn-facebook" ng-click="login('facebook')" title="Sign in with Facebook" >
+        <i class="fa fa-facebook"></i>
+      </a>
+      <a class="btn btn-lg btn-social-icon btn-twitter" ng-click="login('twitter')" title="Sign in with Twitter" >
+        <i class="fa fa-twitter"></i>
+      </a>
+    </p>
+    <p>
+      <a class="btn btn-lg btn-social-icon btn-linkedin" ng-click="login('linkedin')" title="Sign in with LinkedIn" >
+        <i class="fa fa-linkedin"></i>
+      </a>
+      <a class="btn btn-lg btn-social-icon btn-google" ng-click="login('google')" title="Sign in with Google" >
+        <i class="fa fa-google"></i>
+      </a>
+    </p>
+
+    <small class="text-muted">Or sign in with '{{app.title}}'</small>
+    <br><br>
+    <div class="form-group ">
+        <input autofocus="" class="form-control input-lg" id="username" name="username" value="" placeholder="Username or Email" type="email">
+    </div>
+    <div class="form-group ">
+      <div class="input-group input-group-lg">
+        <input id="password" name="password" class="ember-view ember-text-field form-control login-input-pass" placeholder="Password" type="password">
+        <span class="input-group-btn">
+          <button class="btn btn-default btn-password-show" type="button" data-target="#password" data-toggle="button" title="Show/Hide Password" tabindex="-1">
+            <span class="fa fa-eye"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <button class="btn btn-lg btn-primary btn-block btn-center" type="submit" >Sign in</button>
+    <div class="form-group">
+      <div class="btn-group btn-group-justified form-control-static">
+        <a class="btn btn-link btn-xs ellipsis" href="/user/forgot/">Forgot password?</a>
+        <a class="btn btn-link btn-xs ellipsis" href="/signup/?next=%2F">Create new account</a>
+      </div>
+    </div>
+
+
+    <div class="checkbox remember">
+      <label><input checked="" type="checkbox">Keep me signed in</label>
+    </div>
+
+    <!--<small class="create-account text-muted">Dont have a 'Sails UserApp Social Login'2 or social network account? <button id="btsignup" class="ember-view btn btn-sm btn-default"> Sign Up </button> </small>-->
+  </form>
+</div>
+
+
+
